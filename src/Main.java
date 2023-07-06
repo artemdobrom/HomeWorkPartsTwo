@@ -164,11 +164,11 @@ public class Main {
 
         if (client == iOS && year >= 2015) {
             System.out.println("Установите  версию приложения для iOS по ссылке");
-        } else if (client == iOS && year <= 2015) {
+        } else if (client == iOS && year < 2015) {
             System.out.println("Установите облегчённыу версию приложения для iOS по ссылке");
         } else if (client == android && year >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (client == android && year <= 2015) {
+        } else if (client == android && year < 2015) {
             System.out.println("Установите облегчённыу версию приложения для Android по ссылке");
         } else {
             System.out.println("Некорректные данные");
@@ -196,7 +196,7 @@ public class Main {
 
         if (distantion <= 20) {
             System.out.println("Потребуется дней: " + day);
-        } else if (distantion >= 20 & distantion <= 60) {
+        } else if (distantion > 20 & distantion <= 60) {
             System.out.println("Потребуется дней: " + (day + 1));
         } else if (distantion > 60 & distantion <= 100) {
             System.out.println("Потребуется дней: " + (day + 1 + 1));
